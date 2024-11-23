@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import object from "../../assets/object.png";
 import code from "../../assets/code.png";
+import FloatingObject from "../FloatingObject/FloatingObject";
 import "./DecodeRace.css"; // Importando o arquivo CSS
 
 function DecodeRace() {
@@ -33,14 +34,7 @@ function DecodeRace() {
         <p className="decode-race-text">
           {Text2}
         </p>
-        <motion.img
-          initial={{ opacity: 1, y: 1000 }}
-          animate={{
-            y: -1.4*scrollY, // O texto se move para cima conforme o scroll
-          }}
-          src={object}
-          className="object-image"
-        />
+        <FloatingObject />
       </motion.div>
     </div>
   );

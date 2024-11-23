@@ -1,0 +1,38 @@
+.object-image {
+    position: absolute;
+    width: 70%;
+}
+  
+
+/* Media Queries para telas menores */
+@media (max-width: 1440px) { 
+    .object-image {
+      width: 80%; /* Ajusta a largura da imagem para se adaptar a telas menores */
+      margin-top: -8rem; /* Ajusta a margem da imagem para evitar sobreposição */
+    }
+  }
+  
+  /* Para telas menores que 1200px */
+  @media (max-width: 1200px) {
+  
+    .object-image {
+      width: 90%; /* Ajusta a largura da imagem */
+      margin-top: -5rem; /* Ajusta a margem da imagem */
+    }
+  }
+  
+  /* Para telas menores que 768px */
+  @media (max-width: 768px) {
+    .object-image {
+      width: 85%; /* A imagem ocupará 100% da largura */
+      margin-top: -3rem; /* Ajusta a margem para telas muito pequenas */
+    }
+  }
+  
+  /* Para telas menores que 480px (dispositivos móveis) */
+  @media (max-width: 480px) {
+    .object-image {
+      width: 85%; /* A imagem ocupa toda a largura */
+      margin-top: -2rem; /* Ajuste da margem */
+    }
+  }
