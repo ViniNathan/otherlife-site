@@ -24,8 +24,8 @@ function App() {
       <LandingPage />
       <DecodeRace />
       <LiveBlockchain />
-      <Applications />
-      <GlobalInvite />
+      {/* <Applications />
+      <GlobalInvite /> */}
       <Footer />
     </div>
   );
