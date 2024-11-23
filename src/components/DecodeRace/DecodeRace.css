@@ -1,5 +1,5 @@
 .decode-race-container {
-  height: 100vh;
+  height: max-content;
   background: var(--light-beige); /* Cor de fundo */
   color: var(--dark-gray); /* Cor do texto */
   display: flex;
