@@ -20,7 +20,7 @@
 }
 
 .decode-race-text {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-top: 1rem;
   white-space: pre-wrap; /* Permite quebras de linha e espaços extras */
   word-wrap: break-word; /* Quebra as palavras longas para caber na linha */
