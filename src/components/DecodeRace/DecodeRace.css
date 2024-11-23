@@ -1,0 +1,120 @@
+.decode-race-container {
+  height: 100vh;
+  background: var(--light-beige); /* Cor de fundo */
+  color: var(--dark-gray); /* Cor do texto */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding: 0 20px; /* Adiciona padding para garantir que o texto não fique colado às bordas */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.decode-race-title {
+  font-size: 7rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+.decode-race-text {
+  font-size: 2rem;
+  margin-top: 1rem;
+  white-space: pre-wrap; /* Permite quebras de linha e espaços extras */
+  word-wrap: break-word; /* Quebra as palavras longas para caber na linha */
+  display: block; /* Garantindo que o texto se comporte como um bloco */
+  line-height: 1.5; /* Ajusta a altura da linha para maior legibilidade */
+  width: 80%; /* Define um limite para a largura */
+  margin: 0 auto; /* Centraliza o texto */
+  padding-right: 5px;
+  border-left: 4px solid #333;
+}
+
+.arial-font {
+  font-family: Arial, sans-serif;
+}
+
+.alien-font {
+  font-family: "alien";
+}
+
+.object-image {
+  position: relative;
+  width: 70%;
+  margin-top: -11rem;
+}
+
+
+/* Media Queries para telas menores */
+@media (max-width: 1440px) {
+  .decode-race-title {
+    font-size: 6rem; /* Reduz o tamanho da fonte do título */
+    margin-bottom: 3rem; /* Ajusta o espaçamento entre título e texto */
+  }
+
+  .decode-race-text {
+    font-size: 2rem; /* Ajusta o tamanho do texto */
+    width: 90%; /* Aumenta a largura do texto */
+  }
+
+  .object-image {
+    width: 80%; /* Ajusta a largura da imagem para se adaptar a telas menores */
+    margin-top: -8rem; /* Ajusta a margem da imagem para evitar sobreposição */
+  }
+}
+
+/* Para telas menores que 1200px */
+@media (max-width: 1200px) {
+  .decode-race-title {
+    font-size: 4rem; /* Reduz ainda mais o tamanho do título */
+    margin-bottom: 2rem;
+  }
+
+  .decode-race-text {
+    font-size: 1.6rem; /* Ajusta o tamanho do texto */
+    width: 95%; /* Aumenta ainda mais a largura do texto */
+  }
+
+  .object-image {
+    width: 90%; /* Ajusta a largura da imagem */
+    margin-top: -5rem; /* Ajusta a margem da imagem */
+  }
+}
+
+/* Para telas menores que 768px */
+@media (max-width: 768px) {
+  .decode-race-title {
+    font-size: 3rem; /* Tamanho menor para o título */
+    margin-bottom: 1rem;
+  }
+
+  .decode-race-text {
+    font-size: 1.2rem; /* Reduz o tamanho do texto */
+    width: 100%; /* O texto ocupará toda a largura da tela */
+  }
+
+  .object-image {
+    width: 85%; /* A imagem ocupará 100% da largura */
+    margin-top: -3rem; /* Ajusta a margem para telas muito pequenas */
+  }
+}
+
+/* Para telas menores que 480px (dispositivos móveis) */
+@media (max-width: 480px) {
+  .decode-race-title {
+    font-size: 2.3rem; /* Ajusta o título para telas pequenas */
+    margin-bottom: 1rem;
+  }
+
+  .decode-race-text {
+    font-size: 0.8rem; /* Ajuste adicional no tamanho do texto */
+    width: 100%; /* O texto ocupa toda a largura disponível */
+  }
+
+  .object-image {
+    width: 85%; /* A imagem ocupa toda a largura */
+    margin-top: -2rem; /* Ajuste da margem */
+  }
+}
