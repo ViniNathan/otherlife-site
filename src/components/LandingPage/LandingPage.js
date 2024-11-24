@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import asteroid from "../../assets/landing_page_image2.png";
+import pumpfun from "../../assets/pumpfun-logo.png";
 import "./LandingPage.css";
 
 function LandingPage() {
@@ -18,6 +19,11 @@ function LandingPage() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleClick = () => {
+    const url = "https://pump.fun";
+    window.open(url, "_blank");
+  };
 
   return (
     <div className="landing-page">
@@ -53,7 +59,8 @@ function LandingPage() {
         className="text-container"
       >
         <h1>OtherLife</h1>
-        <p>ALIEN DEX</p>
+        <p>ALIEN AI TOKEN</p>
+        <img src={pumpfun} className="pumpfun-logo" onClick={handleClick}/>
       </motion.div>
     </div>
   );

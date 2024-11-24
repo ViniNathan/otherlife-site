@@ -1,41 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import object from "../../assets/object.png";
-import code from "../../assets/code.png";
 import FloatingObject from "../FloatingObject/FloatingObject";
 import "./DecodeRace.css"; // Importando o arquivo CSS
 
 function DecodeRace() {
-  const [scrollY, setScrollY] = useState(0);
 
-  const handleScroll = () => {
-    setScrollY(window.scrollY);
-  };
-  // Adiciona e limpa o evento de scroll ao carregar e descarregar o componente
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  const Text1 =
-    "Em um universo vasto e inexplorado, onde bilhões de estrelas brilham solitárias, a humanidade sempre se perguntou: \"Estamos sozinhos?\". A resposta veio não de sinais de rádio, telescópios ou satélites, mas de uma descoberta revolucionária feita por cientistas independentes trabalhando com dados de mineração de asteroides. Durante uma missão financiada por uma coalizão de entusiastas espaciais e tecnólogos, um pequeno asteroide trouxe à Terra mais do que metais preciosos – trouxe códigos biológicos alienígenas, armazenados em forma de dados.";
-    const Text2 =
-    "Esses códigos, uma linguagem desconhecida que parecia misturar biologia e algoritmos, continham padrões de vida de outro mundo. Eles não eram apenas uma prova de vida extraterrestre, mas sim fragmentos da cultura, ciência e existência de uma civilização muito além da nossa. A humanidade percebeu que esse conhecimento poderia ser a chave para avanços incríveis, mas também um risco se caísse nas mãos erradas."
+    const Text1 =
+    "In a vast and unexplored universe, where billions of stars shine alone, humanity has always wondered:";
+    const Text2 = "\"Are we alone?\"";
+    const Text3 = "The answer came not from radio signals, telescopes or satellites, but from a revolutionary discovery made by independent scientists working with asteroid mining data. During a mission funded by a coalition of space enthusiasts and technologists, a small asteroid brought more than precious metals to Earth - it brought alien biological codes, stored in the form of data."
+    const Text4 =
+    "These codes, in an unknown language that seemed to mix biology and algorithms, contained patterns of life from another world and were encrypted on a blockchain. They were not just proof of extraterrestrial life, but fragments of the culture, science and existence of a civilization far beyond our own. Humanity realized that this knowledge could be the key to incredible advances, but also a risk if it fell into the wrong hands."
 
   return (
     <div className="decode-race-container">
-      <motion.div>
-        <h2 className="decode-race-title">A Corrida para Decifrar</h2>
+      <div className = "decode-text-container">
+        <h2 className="decode-race-title">Decode It</h2>
         <p className="decode-race-text">
           {Text1}
         </p>
         <p className="decode-race-text">
           {Text2}
         </p>
+        <p className="decode-race-text">
+          {Text3}
+        </p>
+        <p className="decode-race-text">
+          {Text4}
+        </p>
         <FloatingObject />
-      </motion.div>
+      </div>
     </div>
   );
 }

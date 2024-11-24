@@ -11,25 +11,34 @@
   overflow: hidden;
 }
 
+.decode-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .decode-race-title {
   font-size: 7rem;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-
+  font-family: var(--minimalista-font);
 }
 
 .decode-race-text {
   font-size: 2rem;
-  margin-top: 1rem;
   white-space: pre-wrap; /* Permite quebras de linha e espaços extras */
   word-wrap: break-word; /* Quebra as palavras longas para caber na linha */
   display: block; /* Garantindo que o texto se comporte como um bloco */
   line-height: 1.5; /* Ajusta a altura da linha para maior legibilidade */
   width: 80%; /* Define um limite para a largura */
   margin: 0 auto; /* Centraliza o texto */
-  padding-right: 5px;
-  border-left: 4px solid #333;
+  padding-left: 10px;
+  border-left: 4px solid var(--dark-gray);
+  font-family: monospace;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .arial-font {

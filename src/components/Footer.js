@@ -15,26 +15,14 @@ function Footer() {
       }}
     >
       <div>
-        <p>© 2024 OtherLife. Todos os direitos reservados.</p>
+        <p>© 2024 OtherLife</p>
       </div>
       <div style={{ display: "flex", gap: "1rem" }}>
         <a
           href="#"
           style={{ color: theme.colors.lightBeige, textDecoration: "none" }}
         >
-          Twitter
-        </a>
-        <a
-          href="#"
-          style={{ color: theme.colors.lightBeige, textDecoration: "none" }}
-        >
-          Discord
-        </a>
-        <a
-          href="#"
-          style={{ color: theme.colors.lightBeige, textDecoration: "none" }}
-        >
-          Contato
+          PumpFun
         </a>
       </div>
     </div>
