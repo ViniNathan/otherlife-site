@@ -3,8 +3,6 @@ import "./App.css";
 import LandingPage from "./components/LandingPage/LandingPage";
 import DecodeRace from "./components/DecodeRace/DecodeRace";
 import LiveBlockchain from "./components/LiveBlockchain/LiveBlockchain";
-import Applications from "./components/Applications";
-import GlobalInvite from "./components/GlobalInvite";
 import Footer from "./components/Footer";
 
 function App() {
@@ -24,8 +22,6 @@ function App() {
       <LandingPage />
       <DecodeRace />
       <LiveBlockchain />
-      {/* <Applications />
-      <GlobalInvite /> */}
       <Footer />
     </div>
   );
