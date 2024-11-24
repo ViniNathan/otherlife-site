@@ -1,6 +1,7 @@
 .live-blockchain-container {
     height: max-content;
     background-color: var(--dark-gray); /* cor terracotta */
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-start;
