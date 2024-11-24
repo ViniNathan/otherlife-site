@@ -21,7 +21,7 @@ function LandingPage() {
   }, []);
 
   const handleClick = () => {
-    const url = "https://pump.fun";
+    const url = "https://pump.fun/coin/DrJjgppcVjBidej2uDDTfaMV32LykMQBAqnDccJVpump";
     window.open(url, "_blank");
   };
 
