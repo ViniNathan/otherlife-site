@@ -2,6 +2,11 @@ import React from "react";
 import theme from "../theme";
 
 function Footer() {
+  const handleClick = () => {
+    const url = "https://x.com/TrueSolanaDEV";
+    window.open(url, "_blank");
+  };
+
   return (
     <div
       style={{
@@ -17,12 +22,12 @@ function Footer() {
       <div>
         <p>© 2024 OtherLife</p>
       </div>
-      <div style={{ display: "flex", gap: "1rem" }}>
+      <div style={{ display: "flex", gap: "1rem" }} onClick={handleClick}>
         <a
           href="#"
           style={{ color: theme.colors.lightBeige, textDecoration: "none" }}
         >
-          PumpFun
+          TWITTER
         </a>
       </div>
     </div>
