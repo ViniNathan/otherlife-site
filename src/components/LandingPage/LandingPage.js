@@ -60,7 +60,8 @@ function LandingPage() {
       >
         <h1>OtherLife</h1>
         <p>ALIEN AI TOKEN</p>
-        <img src={pumpfun} className="pumpfun-logo" onClick={handleClick}/>
+        {/* <img src={pumpfun} className="pumpfun-logo" onClick={handleClick}/> */}
+        <p>MADE BY TRUESOLANA DEV</p>
       </motion.div>
     </div>
   );
